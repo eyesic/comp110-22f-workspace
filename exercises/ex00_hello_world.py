@@ -1,3 +1,3 @@
-""""Hello World Assignment"""
-print("Hello, world.")
-__author__ = 730553797
+"""Hello World Assingment."""
+__author__ = "730553797"
+print(" Hello, world. ")
