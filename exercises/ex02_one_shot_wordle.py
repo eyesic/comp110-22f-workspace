@@ -1,4 +1,4 @@
-"""One Shot Wordle"""
+"""One Shot Wordle."""
 
 __author__ = "730553797"
 
@@ -10,7 +10,7 @@ while len(user_word) != len(secret_word):
     user_word = input()
 else:
     if user_word != secret_word:
-            print("Not quite. Play again soon!")
+        print("Not quite. Play again soon!")
     else:
         if user_word == secret_word:
             print("Woo! You got it! ")  
@@ -22,7 +22,7 @@ YELLOW_BOX: str = "\U0001F7E8"
 i: int = 0
 result: str = ""
 
-while  i < len(user_word):
+while i < len(user_word):
     if user_word[i] == secret_word[i]:
         result += GREEN_BOX
     elif user_word[i] in secret_word:
