@@ -56,11 +56,11 @@ def greet() -> None:
 
 def count_points(x: int) -> int:
     """Function to assign points."""
-    global points
-    points += x
-    total_points: str = (f"===Total Points: {points}===")
-    print(f"+{x}")
-    return (total_points)
+    x += 100
+    total_points: str = (f"===Total Points: {x}===")
+    print("+100")
+    print(total_points)
+    return (x)
 
 
 def choice(x: list) -> str:
@@ -226,12 +226,12 @@ def main() -> None:
     x = choice(options)
 
     if x == options[0]:
-        print(count_points(50))
+        points = count_points(points)
         print("\n")
         sleep()
         game_over()
     elif x == options[1]:
-        print(count_points(100))
+        points = count_points(points)
         print("\n")
         forest()
         winner = battle(starters[1][0], mobs[2][0], starters[1][1], mobs[2][1])
@@ -242,7 +242,7 @@ def main() -> None:
         game_over()
 
     elif x == options[2]:
-        print(count_points(150))
+        points = count_points(points)
         print("\n")
         town()
         winner = battle(starters[2][0], mobs[1][0], starters[2][1], mobs[1][1])
